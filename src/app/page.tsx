@@ -1,9 +1,11 @@
-import Header from "@/components/header";
+import Banner from "@/components/home/banner";
+import Header from "@/components/shared/header";
 
 export default function Home() {
   return (
-    <div >
-      <Header/>
+    <div>
+      <Header />
+      <Banner />
     </div>
   );
 }
