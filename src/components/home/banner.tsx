@@ -3,19 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import globe from "../../../public/assets/banner/circle.png";
+import gradient from "../../../public/assets/banner/gradient.svg";
 const Banner = () => {
   return (
     <section className="h-[88vh] border border-gray-100 ">
+      <div className="absolute  right-14">
+        <Image alt="gradient image" src={gradient} />
+      </div>
       <div className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
         {/* Header */}
-        <div className="flex items-center gap-2 text-sm font-medium mb-5">
+        <div className="flex items-center gap-2 text-xl font-medium mb-5">
           <span>CREATIVE SERVICES</span>
           <Image height={64} width={64} alt="globe image" src={globe} />
           <span>FOR MODERN BRANDS</span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-[clamp(2.5rem,8vw,5.5rem)] leading-[1.1] font-black mb-8 tracking-normal">
+        <h1 className="text-[clamp(4rem,8vw,8.5rem)] leading-[1.1] font-black mb-8 tracking-normal">
           WE BUILD BRANDS
           <br />
           THAT {" "}
@@ -33,7 +37,7 @@ const Banner = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-lg md:text-xl max-w-lg mb-12">
+        <p className="text-lg md:text-xl max-w-lg mb-8">
           We&apos;re a creative web design and branding agency based in India
           that crafts beautiful work for brands who{" "}
           <span className="text-purple-600 font-semibold">
