@@ -8,20 +8,26 @@ const Banner = () => {
     <section className="h-[88vh] border border-gray-100 ">
       <div className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
         {/* Header */}
-        <div className="flex items-center gap-2 text-sm font-medium mb-16">
+        <div className="flex items-center gap-2 text-sm font-medium mb-5">
           <span>CREATIVE SERVICES</span>
           <Image height={64} width={64} alt="globe image" src={globe} />
           <span>FOR MODERN BRANDS</span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-[clamp(2.5rem,8vw,5.5rem)] leading-[1.1] font-black mb-8 tracking-tight">
+        <h1 className="text-[clamp(2.5rem,8vw,5.5rem)] leading-[1.1] font-black mb-8 tracking-normal">
           WE BUILD BRANDS
           <br />
-          THAT{" "}
-          <span className="relative inline-block">
+          THAT {" "}
+          <span
+            className="relative inline-block text-black "
+            style={{
+              textShadow: "-7px 3px black",
+              WebkitTextStroke: "4px",
+              WebkitTextFillColor: "white"
+            }}
+          >
             STAND
-            <span className="absolute inset-0 border-4 border-black rounded-lg transform -rotate-2" />
           </span>{" "}
           OUT
         </h1>
@@ -38,7 +44,7 @@ const Banner = () => {
         {/* CTA Button */}
         <Link
           href="#"
-          className="inline-flex items-center gap-2 bg-[#d1ff1a] hover:bg-[#b8e617] text-black font-semibold px-8 py-4 rounded-lg transition-colors duration-200"
+          className="inline-flex items-center gap-2 bg-[#d1ff1a] hover:bg-[#b8e617] text-black font-semibold px-10 py-5 rounded-lg transition-colors duration-200"
         >
           Get Started
           <RocketIcon className="w-5 h-5" />
