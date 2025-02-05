@@ -20,10 +20,10 @@ export default function Footer() {
       </div>
 
       {/* Middle Section with Button */}
-      <div className="flex justify-center items-center my-20">
-        <div className="relative">
+      <div className="flex justify-center items-center ">
+        <div className="relative ">
           {/* Rotating text around button */}
-          <div className="absolute inset-0 w-32 h-32 rounded-full border-2 border-transparent ">
+          <div className="absolute inset-0 w-36 h-36 rounded-full border-2 border-transparent -left-6 -top-6 ">
             <svg className="w-full h-full" viewBox="0 0 100 100">
               <defs>
                 <path
@@ -31,7 +31,7 @@ export default function Footer() {
                   d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                 />
               </defs>
-              <text className="text-[8px]">
+              <text className="text-[10px] font-semibold">
                 <textPath href="#circle" className="fill-white">
                   Custom Design Quality • Custom Design Quality •
                 </textPath>
