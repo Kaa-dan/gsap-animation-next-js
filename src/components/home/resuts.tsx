@@ -3,10 +3,14 @@
 import { ArrowLeft, ArrowRight, MousePointerClick } from "lucide-react";
 import frame1 from "../../../public/assets/results/frame1.png";
 import Image from "next/image";
+import gradient from "../../../public/assets/results/gradient.png";
 export default function ResultsSection() {
   return (
-    <div className="min-h-screen bg-white p-8">
-      <div className="w-[90%] mx-auto">
+    <div className="min-h-screen bg-white relative">
+      <div className="absolute h-full right-0">
+        <Image alt="gradient" src={gradient} className="h-full object-cover" />
+      </div>
+      <div className="w-[90%] mx-auto z-10  p-8 relative">
         {/* Header with navigation */}
         <div className="flex justify-between h-[20vh] leading-loose items-end mb-10  ">
           <h1 className="text-3xl md:text-6xl font-bold tracking-tight leading-relaxed">
