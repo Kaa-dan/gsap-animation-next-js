@@ -6,7 +6,7 @@ import globe from "../../../public/assets/banner/circle.png";
 import gradient from "../../../public/assets/banner/gradient.svg";
 const Banner = () => {
   return (
-    <section className="h-[88vh] border border-gray-100 overflow-hidden">
+    <section className="h-[88vh] relative border border-gray-100 overflow-hidden">
       <div className="absolute  right-14">
         <Image alt="gradient image" src={gradient} />
       </div>
@@ -22,13 +22,13 @@ const Banner = () => {
         <h1 className="text-[clamp(4rem,8vw,8.5rem)] leading-[1.1] font-black mb-8 tracking-normal">
           WE BUILD BRANDS
           <br />
-          THAT {" "}
+          THAT{" "}
           <span
             className="relative inline-block text-black "
             style={{
               textShadow: "-7px 3px black",
               WebkitTextStroke: "4px",
-              WebkitTextFillColor: "white"
+              WebkitTextFillColor: "white",
             }}
           >
             STAND
@@ -42,7 +42,8 @@ const Banner = () => {
           that crafts beautiful work for brands who{" "}
           <span className="text-purple-600 font-semibold">
             refuse to blend in
-          </span>.
+          </span>
+          .
         </p>
 
         {/* CTA Button */}
