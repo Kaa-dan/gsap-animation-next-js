@@ -2,8 +2,8 @@ import { Menu, Phone } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="h-[12vh] border border-gray-100">
-      <div className="border h-full  w-[90%] m-auto flex justify-between items-center border-gray-100">
+    <header className="h-[12vh] border border-gray-100 ">
+      <div className="border h-full m-auto w-[90%] flex justify-between items-center border-gray-100">
         {/* LEFT SECTION  */}
         <div className="flex border border-gray-100 w-[30%] h-full items-center ">
           <div className="px-6">
