@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import "boxicons/css/boxicons.min.css";
 import finger from "../../../public/assets/footer/finger.png";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -73,21 +74,22 @@ export default function Footer() {
               <Link href="/privacy" className="text-white transition-colors">
                 Privacy
               </Link>
-              <Link
-                href="/terms"
-                className="hover:text-white transition-colors"
-              >
+              <Link href="/terms" className="text-white transition-colors">
                 Terms
               </Link>
             </nav>
+            {/* Copyright */}
+            <div className=" pt-8 text-gray-400">
+              <p>© Company Name 2024. All rights reserved.</p>
+            </div>
           </div>
 
           {/* Get in Touch Section */}
-          <div className="text-right">
+          <div className="text-right ">
             <h3 className="text-[2rem] font-bold mb-4 text-gray-600">
               GET IN TOUCH
             </h3>
-            <div className="flex gap-6 mb-4">
+            <div className="flex gap-6 mb-4   justify-end">
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -98,30 +100,25 @@ export default function Footer() {
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Instagram
+                <i className="bx bxl-instagram text-2xl"></i>
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Facebook
+                <i className="bx bxl-facebook text-2xl"></i>
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                LinkedIn
+                <i className="bx bxl-linkedin text-2xl"></i>
               </a>
             </div>
             <div className="text-gray-400">
               <p>contact@agencyname.com | +91 888 8888 888</p>
             </div>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className=" pt-8 text-gray-400">
-          <p>© Company Name 2024. All rights reserved.</p>
         </div>
       </div>
 
