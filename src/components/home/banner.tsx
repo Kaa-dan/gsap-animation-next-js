@@ -6,7 +6,7 @@ import globe from "../../../public/assets/banner/circle.png";
 import gradient from "../../../public/assets/banner/gradient.svg";
 const Banner = () => {
   return (
-    <section className="h-[88vh] border border-gray-100 ">
+    <section className="h-[88vh] border border-gray-100 overflow-hidden">
       <div className="absolute  right-14">
         <Image alt="gradient image" src={gradient} />
       </div>
