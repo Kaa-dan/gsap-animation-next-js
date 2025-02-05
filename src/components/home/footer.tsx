@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="flex justify-center items-center ">
         <div className="relative ">
           {/* Rotating text around button */}
-          <div className="absolute inset-0 w-36 h-36 rounded-full border-2 border-transparent -left-6 -top-6 ">
+          <div className="absolute inset-0 w-36 h-36 rounded-full border-2 border-transparent -left-8 -top-8 ">
             <svg className="w-full h-full" viewBox="0 0 100 100">
               <defs>
                 <path
@@ -33,7 +33,7 @@ export default function Footer() {
               </defs>
               <text className="text-[10px] font-semibold">
                 <textPath href="#circle" className="fill-white">
-                  Custom Design Quality • Custom Design Quality •
+                  Custom Design Quality Outline To Your Design
                 </textPath>
               </text>
             </svg>
@@ -43,7 +43,7 @@ export default function Footer() {
           <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="w-24 h-24 bg-[#CCFF00] rounded-full flex items-center justify-center text-black font-medium z-10 relative hover:bg-[#b8e600] transition-colors"
+            className="w-20 h-20 bg-[#CCFF00] rounded-full flex items-center justify-center text-black font-medium z-10 relative hover:bg-[#b8e600] transition-colors"
           >
             Let&apos;s Talk
           </button>
