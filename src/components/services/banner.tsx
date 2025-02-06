@@ -6,14 +6,8 @@ export default function Banner() {
       <div className="max-w-7xl mx-auto">
         {/* Header with icon and creative expertise */}
         <div className="flex items-center gap-2 mb-16">
-          <div className="w-6 h-6">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
-              <path d="M12 19l7-7 3 3-7 7-3-3z" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M2 2l7.586 7.586" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M11 11l-4 4" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
+           <div></div>
+          
           <span className="text-sm font-medium tracking-wider">CREATIVE EXPERTISE</span>
         </div>
 
